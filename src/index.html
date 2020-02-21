@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/d9b34a8a72.js" crossorigin="anonymous"></script>
+    <title>Colt Steele Challenge</title>
+</head>
+<body>
+    <main>
+        <form class="step-form">
+            <div class="steps-container">
+                <div class="form-step active" data-step="1">
+                    <div class="input-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username"" autocomplete="off" spellcheck="false">    
+                    </div>
+                    <div class="step-actions">
+                        <button type="button" class="next-step-btn"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="form-step" data-step="2">
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" spellcheck="false">    
+                    </div>
+                    <div class="step-actions">
+                        <button type="button" class="prev-step-btn"><i class="fas fa-arrow-left"></i></button>
+                        <button type="button" class="next-step-btn"><i class="fas fa-arrow-right"></i></button>    
+                    </div>
+                </div>
+                <div class="form-step" data-action="submit" data-step="3">
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password">    
+                    </div>
+                    <div class="step-actions">
+                        <button type="button" class="prev-step-btn"><i class="fas fa-arrow-left"></i></button>
+                        <button type="submit" class="step-form-submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="step-bubbles">
+                <button type="button" class="bubble active" data-target-step="1"></button>
+                <button type="button" class="bubble" data-target-step="2"></button>
+                <button type="button" class="bubble" data-target-step="3"></button>
+            </div>
+        </form>
+    </main>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
